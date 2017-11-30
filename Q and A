@@ -1,0 +1,42 @@
+Q.What is the difference between Internal Storage & External Storage?
+
+A.
+Internal Storage: 
+By default, files saved to the internal storage are private to your application and other applications cannot access them. 
+When the user uninstalls your application, these files are removed/deleted. Your app user also can't access them using file manager; 
+even after enabling "show hidden files" option in file manager. To access files in Internal Storage, you have to root your Android phone.
+
+External storage:
+This can be a removable storage media (such as an SD card) or an internal (non-removable) storage.
+External storage is modifiable by the user and other apps, there are two categories of files we might save here:
+1.	Public files: Files that should be freely available to other apps and to the user. When the user uninstalls your app, 
+these files should remain available to the user. For example, photos captured by your app or other downloaded files.
+
+2.	Private files: Files that rightfully belong to your app and should be deleted when the user uninstalls your app. 
+When the user uninstalls your app, the system deletes all files in your app's external private directory.
+For example, additional resources downloaded by your app or temporary media files.
+
+Q.For how long the data resides in the cache?
+
+A.Till user clears the cache data from the device.As we use applications, they start storing files for reference later.
+These files are stored in an app "cache." For instance: When you're using an app, it'll save images and files which you've read 
+so that they don't have to be downloaded each and every single time the app needs them. This saves you time and data. 
+But maybe you want to clear an app's cached data, either to regain some used space or to try to fix a misbehaving app.
+
+
+Q.What are the critical Permissions and Normal Permissions? What are the examples of each?
+
+A.
+Normal Permissions
+Many permissions are designated as PROTECTION_NORMAL, which indicates that there's no great risk to the user's privacy or security 
+in letting apps have those permissions. Normal permissions cover areas where your app needs to access data or resources outside 
+the app's sandbox, but where there's very little risk to the user's privacy or the operation of other apps. For example,
+permission to set the time zone is a normal permission. If an app declares that it needs a normal permission, 
+the system automatically grants the permission to the app. For a full listing of the current normal permissions.
+
+Critical Permissions
+Dangerous permissions cover areas where the app wants data or resources that involve the user's private information, 
+or could potentially affect the user's stored data or the operation of other apps. 
+For example, the ability to read the user's contacts is a dangerous permission.
+If an app declares that it needs a dangerous permission, the user has to explicitly grant the permission to the app.
+
